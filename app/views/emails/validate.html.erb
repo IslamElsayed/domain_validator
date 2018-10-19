@@ -1,0 +1,8 @@
+<h1>Emails validate</h1>
+
+<%= form_tag validate_emails_path, method: :get do %>
+  valid: <%= @valid %>
+  <br/>
+  <%= text_field_tag :email, params[:email] %>
+  <%= submit_tag :validate %>
+<% end %>
