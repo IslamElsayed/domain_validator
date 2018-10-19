@@ -4,5 +4,7 @@ Rails.application.routes.draw do
       get :validate
     end
   end
+
+  root 'emails#validate'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
